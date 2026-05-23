@@ -5,12 +5,15 @@
     <link rel="stylesheet" href="pagina-inicial.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raccoon Bakery</title>
+    <link rel="icon" type="image/png" href="img/logo-raccoonbakery.png">
 </head>
 <body>
 
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
     <header>
         <div class="header-container">
-            <img src="img/logo-raccoonbakery.png.png" alt="logo-padaria" class="logo-header">
+            <img src="img/logo-raccoonbakery.png" alt="Logotipo Raccoon Bakery com ilustração de guaxinim" class="logo-header">
             <nav id="menu-principal" role="navigation" aria-label="Navegação principal">
                 <ul>
                     <li><a href="cardapio.html">Cardápio</a></li>
@@ -22,59 +25,73 @@
         </div>
     </header>
 
-    <main class="vitrine-banners">
-        
-        <div class="banner">
+    <main id="conteudo-principal" class="vitrine-banners">
+        <div class="banner" role="region" aria-label="Banner de destaque">
             <div class="lado-esquerdo marrom">
                 <div class="marca-container">
-                    <img src="img/logo-raccoonbakery.png.png" alt="Logo Raccoon" class="logo-do-produto">
+                    <img src="img/logo-raccoonbakery.png" alt="Logotipo da marca" class="logo-do-produto">
                     <h1 class="titulo-marca">Raccoon</h1>
                     <p class="subtitulo-marca">Bakery</p>
                 </div>
-    
             </div>
-            <div class="lado-direito fundo-padaria">
-                <h2 class="nome-sabor">.</h2>
-                
-            </div>
+            <div class="lado-direito fundo-padaria" role="img" aria-label="Fotografia de pães artesanais dispostos no balcão da padaria"></div>
         </div>
-
     </main>
 
-    <div class="sobre">
-        <div class="texto">
+    <section class="sobre" aria-label="Sobre nós">
+        <div class="sobre-texto">
             <h2>Bem-vindo à Raccoon Bakery</h2>
-            <p>Mais do que uma padaria, a Raccoon Bakery é um ponto de encontro com as coisas simples e boas da vida. Criamos um espaço onde o aroma do pão artesanal quentinho se mistura ao som de conversas baixas e risadas. </p>
-            <br>
-               <p> Um lugar para aquecer as mãos na xícara de café e nutrir o coração com o melhor da panificação.</p>
-               <br>
-               <p>Puxe uma cadeira, respire fundo e sinta-se em casa na nossa toca. </p>
+            <p>Mais do que uma padaria, a Raccoon Bakery é um ponto de encontro com as coisas simples e boas da vida.</p>
+            <p>Criamos um espaço onde o aroma do pão artesanal quentinho se mistura ao som de conversas baixas e risadas.</p>
+            <p>Um lugar para aquecer as mãos na xícara de café e nutrir o coração com o melhor da panificação.</p>
+            <p>Puxe uma cadeira, respire fundo e sinta-se em casa na nossa toca.</p>
         </div>
-        <img src="/img/pexels-ignacio-rosas-348555402-14160612.jpg" alt="">
-    </div>
+        <img src="img/pexels-ignacio-rosas-348555402-14160612.jpg" alt="Vitrine iluminada exibindo doces, croissants e tortas artesanais">
+    </section>
 
-    <div class="avaliacoes">
+    <section class="avaliacoes" aria-label="Depoimentos dos clientes">
         <div class="texto">
             <h2>O que nossos clientes dizem:</h2>
         </div>
-        <div class="avaliacao">
-            <p>"A melhor padaria da cidade! O pão é sempre fresco e delicioso."</p>
-            <span>- Maria S.</span>
+        
+        <div class="depoimentos-container">
+            <article class="avaliacao">
+                <p>"A melhor padaria da cidade! O pão é sempre fresco e delicioso."</p>
+                <span>- Maria S.</span>
+            </article>
+            <article class="avaliacao">
+                <p>"Adoro o ambiente acolhedor e o atendimento amigável. Recomendo a todos!"</p>
+                <span>- João P.</span>
+            </article>
+            <article class="avaliacao">
+                <p>"Os doces são incríveis, especially os croissants. Vale a pena experimentar!"</p>
+                <span>- Ana L.</span>
+            </article>
         </div>
-        <div class="avaliacao">
-            <p>"Adoro o ambiente acolhedor e o atendimento amigável. Recomendo a todos!"</p>
-            <span>- João P.</span>
-        </div>
-        <div class="avaliacao">
-            <p>"Os doces são incríveis, especialmente os croissants. Vale a pena experimentar!"</p>
-            <span>- Ana L.</span>
-        </div>
-    </div>
+    </section>
 
     <footer>
-        <p>Copyright © Raccoon Bakery. Todos os direitos reservados.</p>
-        <p>(16) 99643-2749</p>
-        <p>Rua das Flores, 123 — São Paulo — SP</p>
+        <div class="footer-container">
+            <p>Copyright © Raccoon Bakery. Todos os direitos reservados.</p>
+            <p>Telefone: (16) 99643-2749</p>
+            <p>Endereço: Rua das Flores, 123 — São Paulo — SP</p>
+            
+            <div class="footer-redes">
+                    <span>@raccoon.bakery</span>
+                </a>
+            </div>
+        </div>
     </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 </html>

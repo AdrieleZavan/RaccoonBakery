@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+     background-color: #FFF2E0;
+     font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: #B6885D;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 15px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-header {
+    height: 50px;
+    object-fit: contain;
+}
+
+#menu-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+#menu-principal a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3F1D0E;
+}
+
+.cardapio-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.titulo-cardapio {
+    font-family: 'Quicksand', sans-serif;
+    color: #73411f;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.busca-container {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#input-busca {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #B6885D;
+    border-radius: 8px;
+    background-color: #fcf8f5;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #3F1D0E;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#input-busca:focus {
+    border-color: #73411f;
+}
+
+.categoria-secao {
+    margin-bottom: 60px;
+}
+
+.categoria-titulo {
+    font-family: 'Quicksand', sans-serif;
+    color: #73411f;
+    font-size: 24px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #B6885D;
+    padding-bottom: 8px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.produto-card {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-imagem {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #f2e6d9;
+    border-radius: 8px; 
+}
+
+.produto-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.produto-info {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.produto-linha-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.produto-nome {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #3F1D0E;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.produto-preco {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #3F1D0E;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.produto-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: auto;
+    align-items: center;
+}
+
+.produto-acoes a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    width: max-content;
+}
+
+
+.btn-loja {
+    color: #3F1D0E;
+}
+
+footer {
+    background-color: #B6885D;
+    color: #3F1D0E;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 80px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #73411f;
+    color: #FFF2E0;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.2s;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+
+@media (max-width: 992px) {
+    .grid-produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    #menu-principal ul {
+        gap: 15px;
+    }
+
+    .grid-produtos {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .produto-imagem {
+        height: 320px;
+    }
+}
