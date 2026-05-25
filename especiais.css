@@ -15,7 +15,7 @@ body {
      padding: 40px 20px;
 }
 
-.skip-link {
+.pular-link {
     position: absolute;
     top: -40px;
     left: 0;
@@ -29,18 +29,18 @@ body {
     font-weight: bold;
 }
 
-.skip-link:focus {
+.pular-link:focus {
     top: 0;
 }
 
-/* Container Ampliado com padrão xadrez marrom rústico */
+
 .container-xadrez-global {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     background-color: #ffffff;
     background-image: linear-gradient(90deg, rgba(115, 65, 31, 0.22) 50%, transparent 50%),
-                      linear-gradient(rgba(115, 65, 31, 0.22) 50%, transparent 50%);
+     linear-gradient(rgba(115, 65, 31, 0.22) 50%, transparent 50%);
     background-size: 50px 50px;
     padding: 45px;
     border-radius: 16px;

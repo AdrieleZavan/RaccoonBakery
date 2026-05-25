@@ -250,7 +250,7 @@ footer p {
 }
 
 
-.skip-link {
+.pular-link {
     position: absolute;
     top: -40px;
     left: 0;
@@ -264,7 +264,7 @@ footer p {
     font-weight: bold;
 }
 
-.skip-link:focus {
+.pular-link:focus {
     top: 0;
 }
 

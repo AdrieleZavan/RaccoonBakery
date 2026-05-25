@@ -76,7 +76,7 @@ footer {
     padding-bottom: 8px;
 }
 
-.skip-link {
+.pular-link {
     position: absolute;
     top: -40px;
     left: 0;
@@ -90,7 +90,7 @@ footer {
     font-weight: bold;
 }
 
-.skip-link:focus {
+.pular-link:focus {
     top: 0;
 }
 
