@@ -178,6 +178,13 @@ header {
     object-fit: cover;
     border-radius: 12px;
 }
+.sobre-texto p {
+    margin-bottom: 20px;
+}
+.sobre-texto p:last-child {
+    margin-bottom: 0;
+}
+
 
 
 .avaliacoes {
@@ -238,6 +245,10 @@ footer {
   
 }
 
+footer p {
+    margin: 5px 0;
+}
+
 
 .skip-link {
     position: absolute;
@@ -260,16 +271,7 @@ footer {
 
 
 
-.sobre-texto p {
-    margin-bottom: 20px;
-}
-.sobre-texto p:last-child {
-    margin-bottom: 0;
-}
 
-footer p {
-    margin: 5px 0;
-}
 
 @media (max-width: 768px) {
     .header-container {
