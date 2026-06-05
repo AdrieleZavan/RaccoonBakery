@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contato-encomendas/contato.css">
+    <link rel="icon" type="img/logo-raccoonbakery.png" href="/img/logo-raccoonbakery.png">
+    <title>Contato - Raccoon Bakery</title>
+</head>
+<body>
+    
+    <a href="#conteudo-principal" class="pular-link">Pular para o conteúdo principal</a>
+
+    <header>
+        <div class="header-container">
+            <img src="/img/logo-raccoonbakery.png" alt="Logotipo Raccoon Bakery com ilustração de guaxinim" class="logo-header">
+            <nav id="menu-principal" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="/pag-inicial/pagina-inicial.html">Inicial</a></li>
+                    <li><a href="/cardapio/cardapio.html">Cardápio</a></li>
+                    <li><a href="/especiais/especiais.html">Especiais</a></li>
+                    <li><a href="/unidades/unidades.html">Unidades</a></li>
+                    <li><a href="/contato-encomendas/encomendas.html">Encomendas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="contato-container">
+        <h1 class="titulo-contato">Contato</h1>
+        
+        <div class="contato-grid">
+            <div class="formularios-coluna">
+                
+                <section class="secao-formulario">
+                    <h2>Fale Conosco</h2>
+                    <p class="subtitulo-secao">Dúvidas, críticas ou sugestões? Envie uma mensagem para nossa equipe.</p>
+                    
+                    <form action="#" method="POST" class="form-encomenda">
+                        <div class="campo-grupo">
+                            <label for="contato-nome">Nome:</label>
+                            <input type="text" id="contato-nome" name="contato-nome" required placeholder="Digite seu nome">
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label for="contato-email">E-mail:</label>
+                            <input type="email" id="contato-email" name="contato-email" required placeholder="seuemail@exemplo.com">
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label for="contato-mensagem">Sua Mensagem:</label>
+                            <textarea id="contato-mensagem" name="contato-mensagem" rows="4" required placeholder="Como podemos te ajudar?"></textarea>
+                        </div>
+
+                        <div class="botoes-container">
+                            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                            <button type="reset" class="btn-limpar">Limpar</button>
+                        </div>
+                    </form>
+                </section>
+
+            </div> </div> </main>
+
+  <footer>
+        <div class="footer-container">
+            <p>Copyright © Raccoon Bakery. Todos os direitos reservados.</p>
+            <p>Telefone: (16) 99643-2749</p>
+            <p>Endereço: Rua das Flores, 123 — São Paulo — SP</p>
+            
+            <div class="footer-redes">
+                    <span>@raccoon.bakery</span>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>

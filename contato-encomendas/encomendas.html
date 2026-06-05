@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contato-encomendas/encomendas.css">
+    <link rel="icon" type="/img/logo-raccoonbakery.png" href="/img/logo-raccoonbakery.png">
+    <title>Encomendas - Raccoon Bakery</title>
+</head>
+<body>
+    
+    <a href="#conteudo-principal" class="pular-link">Pular para o conteúdo principal</a>
+
+    <header>
+        <div class="header-container">
+            <img src="/img/logo-raccoonbakery.png" alt="Logotipo Raccoon Bakery com ilustração de guaxinim" class="logo-header">
+            <nav id="menu-principal" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="/pag-inicial/pagina-inicial.html">Inicial</a></li>
+                    <li><a href="/cardapio/cardapio.html">Cardápio</a></li>
+                    <li><a href="/especiais/especiais.html">Especiais</a></li>
+                    <li><a href="/unidades/unidades.html">Unidades</a></li>
+                    <li><a href="/contato-encomendas/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="contato-container">
+        <h1 class="titulo-contato">Encomendas & Eventos</h1>
+        
+        <div class="contato-grid">
+            <div class="formularios-coluna">
+                <section class="secao-formulario">
+                    <h2>Faça sua Simulação</h2>
+                    <p class="subtitulo-secao">Preencha os dados para solicitar um orçamento personalizado.</p>
+                    
+                    <form action="#" method="POST" class="form-encomenda">
+                        <div class="campo-grupo">
+                            <label for="nome-cliente">Nome do Responsável:</label>
+                            <input type="text" id="nome-cliente" name="nome-cliente" required placeholder="Digite seu nome completo">
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label for="qtd-pessoas">Quantidade de Convidados:</label>
+                            <input type="number" id="qtd-pessoas" name="qtd-pessoas" min="10" required placeholder="Mínimo de 10 pessoas">
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label>O que não pode faltar no seu evento?</label>
+                            <div class="checkbox-container">
+                                <label><input type="checkbox" name="preferencias" value="salgados"> Salgados Sortidos</label>
+                                <label><input type="checkbox" name="preferencias" value="doces"> Doces & Bolos</label>
+                                <label><input type="checkbox" name="preferencias" value="bebidas"> Bebidas Artesanais</label>
+                            </div>
+                        </div>
+
+                        <div class="botoes-container">
+                            <button type="submit" class="btn-enviar">Solicitar Orçamento</button>
+                            <button type="reset" class="btn-limpar">Limpar Tudo</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <div class="tabelas-coluna">
+                <section class="secao-tabela">
+                    <h2>Tabela de Produtos para Festas</h2>
+                    <p class="subtitulo-secao">Confira nossos valores unitários e o pedido mínimo para cada categoria.</p>
+                    
+                    <table class="tabela-precos">
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Pedido Mínimo</th>
+                                <th>Preço Cento/Unid.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kit Salgados (Mini)</td>
+                                <td>100 unidades</td>
+                                <td>R$ 120,00</td>
+                            </tr>
+                            <tr>
+                                <td>Mini Donuts & Cookies</td>
+                                <td>50 unidades</td>
+                                <td>R$ 90,00</td>
+                            </tr>
+                            <tr>
+                                <td>Bolos Festivos (KG)</td>
+                                <td>2 Kilos</td>
+                                <td>R$ 85,00 / kg</td>
+                            </tr>
+                            <tr>
+                                <td>Garrafas de Suco (300ml)</td>
+                                <td>20 unidades</td>
+                                <td>R$ 7,00 / unid.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </main>
+
+<footer>
+        <div class="footer-container">
+            <p>Copyright © Raccoon Bakery. Todos os direitos reservados.</p>
+            <p>Telefone: (16) 99643-2749</p>
+            <p>Endereço: Rua das Flores, 123 — São Paulo — SP</p>
+            
+            <div class="footer-redes">
+                    <span>@raccoon.bakery</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
