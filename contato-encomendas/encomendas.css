@@ -86,20 +86,6 @@ header {
   width: 100%;
 }
 
-footer {
-  background-color: #B6885D;
-  color: #3F1D0E;
-  text-align: center;
-  padding: 30px 15px;
-  font-family: 'quicksand', sans-serif;
-  font-size: 14px;
-  width: 100%;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
 .pular-link {
   position: absolute;
   top: -40px;
@@ -268,6 +254,19 @@ footer p {
 .tabela-precos tbody tr:hover {
   background-color: #fcead2;
   transition: background-color 0.2s;
+}
+footer {
+  background-color: #B6885D;
+  color: #3F1D0E;
+  text-align: center;
+  padding: 46px 15px;
+  font-family: 'quicksand', sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+footer p {
+  margin: 5px 0;
 }
 
 @media (min-width: 600px) {
