@@ -52,13 +52,7 @@ header {
   color: #3F1D0E;
 }
 
-footer {
-  background-color: #B6885D;
-  color: #3F1D0E;
-  text-align: center;
-  padding: 40px 20px;
-  font-family: 'Quicksand', sans-serif;
-}
+
 
 .titulo-unidades {
   font-size: 36px;
@@ -145,6 +139,16 @@ h1 {
   font-family: 'Quicksand', sans-serif;
   padding-bottom: 8px;
   border-bottom: 2px solid #B6885D;
+}
+footer {
+  background-color: #B6885D;
+  color: #3F1D0E;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+footer p {
+  margin: 5px 0;
 }
 
 @media (max-width: 768px) {
